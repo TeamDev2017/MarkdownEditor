@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container full-height">
     <router-view></router-view>
   </div>
 </template>
@@ -15,5 +15,15 @@ export default {
   font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.full-height {
+  height: 100%;
 }
 </style>
