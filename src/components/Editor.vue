@@ -13,7 +13,7 @@
         :source="source"
         :watches="['source']"
         :show="show"
-        v-on:rendered="allRight">
+        @rendered="highlight()">
       </vue-markdown>
     </section>
   </div>
@@ -38,7 +38,7 @@
   .source{
     width: 100%;
     font-size: 13px;
-    padding:2px
+    padding: 2px
   }
 
   .result-html {
@@ -74,7 +74,7 @@ export default {
     VueMarkdown
   },
   methods: {
-    allRight () {
+    highlight () {
       Prism.highlightAll()
     }
   }
