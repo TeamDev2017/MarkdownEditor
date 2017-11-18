@@ -4,12 +4,13 @@
       <p>Markdown Editor</p>
     </div>
     <div class="col-xs-6 full-height">
-      <textarea v-model="source" class="source full-height">
+      <textarea v-model="source" class="source full-height syncscroll" name="scroll-area">
       </textarea>
     </div>
     <section class="result-area col-xs-6 full-height">
       <vue-markdown
-        class="markdown-preview result-html full-height"
+        class="markdown-preview result-html full-height syncscroll"
+        name="scroll-area"
         :source="source"
         :watches="['source']"
         :show="show"
