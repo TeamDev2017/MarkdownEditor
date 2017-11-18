@@ -14,3 +14,7 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+# bower
+.bowerrc
+static/bower_components/
