@@ -16,5 +16,4 @@ selenium-debug.log
 *.sln
 
 # bower
-.bowerrc
 static/bower_components/
