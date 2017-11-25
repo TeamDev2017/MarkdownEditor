@@ -43,11 +43,11 @@
   }
 
   .result-html {
-    padding:2px 10px;
+    padding: 2px 10px;
     overflow: auto;
-    background-color: #fff;
-    border:1px solid #ccc;
-    border-radius:4px
+    border: 1px solid rgb(153, 153, 153);
+    border-radius:4px;
+    background-color: inherit;
   }
 }
 
