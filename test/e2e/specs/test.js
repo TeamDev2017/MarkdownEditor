@@ -12,7 +12,7 @@ module.exports = {
       .url(devServer)
       .waitForElementVisible('#app', 5000)
       .assert.elementPresent('.editor')
-      .assert.containsText('textarea', 'Editor')
+      .assert.containsText('.page-title', 'Markdown Editor')
       .assert.elementCount('textarea', 1)
       .end()
   }
